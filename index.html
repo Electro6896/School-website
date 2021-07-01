@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>School Webbsite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">St. Xavier’s School</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#Campus life">Campus life</a></li>
+                <li><a href="#Achievements">Achievements</a></li>
+                <li><a href="#WhatsNew">What’s New</a></li>
+                <li><a href="#Alumni">Alumni</a></li>
+                <li><a href="#Contactus">Contact us</a></li>
+
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="announcement">
+        <marquee id="marqueeStyle" onmouseover="this.stop();"onmouseout="this.start();">
+            *** Feel free to ask any Queries on St.XavierSchool@gmail.com ***
+        </marquee>
+    </div>
+
+    <iframe width="1350" height="600" src="https://www.youtube.com/embed/9Frow8HMh74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+    <div class="container">
+        <div class="page-header" id="Campus life">
+            <h2 class="text-capitalize">Campus life</h2>
+        </div>
+
+        <center>
+            <div class="travel_mainDiv">
+                <img class="img-responsive" src="data:image/jpeg;base64,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">
+                <h4 class="text-capitalize"><kbd>School church</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">was established in 1978</h5>
+
+                <p class="text-muted text-left">Education deals with persons and their full development and the Church has a responsibility to help in this full development by being directly involved in formal education and bringing to the content of secular knowledge its own values and insights.</p>
+            </div>
+            <span class="travel_mainDiv">
+                <img class="img-responsive" src="download%20(21).jpg">
+                <h4 class="text-capitalize"><kbd>School library</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">Was buid in 1980</h5>
+
+                <p class="text-muted text-left">A school library (or a school library media center) is a library within a school where students, staff, and often, parents of a public or private school have access to a variety of resources. The goal of the school library media center is to ensure that all members of the school community have equitable access "to books and reading, to information, and to information technology.</p>
+            </span>
+            <span class="travel_mainDiv">
+                <img class="img-responsive" src="hjk.jpg">
+                <h4 class="text-capitalize"><kbd>School Auditorium</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">was build in 1962</h5>
+
+                <p class="text-muted text-left">The auditorium as a unit in school buildings seems to have been. introduced to provide a place for the assembly of pupils and teachers. for opening exercises and announcements. During most of the day. the auditorium either was idle or was used as a study hall.</p>
+            </span>
+
+        </center>
+        <br>
+        <br>
+
+        <div class="page-header" id="Achievements">
+            <h2 class="text-capitalize">School acivements</h2>
+        </div>
+
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#avengers_endgame">
+            <span class="text-capitalize">Inter School Debate on Environment Pollution</span> <i class="fa fa-sort-dest"></i>
+        </div>
+        <div id="avengers_endgame" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="download.jpg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-left text-capitalize">Won first prize in inter school debate on environment pollution </h5>
+
+                <p>The environment provides various resources to man-both renewable and nonrenewable. ... Renewable resources are those resources which are replenished easily over time, and hence can be used without the possibility of the resource becoming depleted or exhausted.</p>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#bbb">
+            <span class="text-capitalize">Inter School Basketball compitition </span> <i class="fa fa-sort-dest"></i>
+        </div>
+        <div id="bbb" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="download%20(1).jpg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-left text-capitalize">Won first prize in inter school Basketball compitition </h5>
+
+                <p>Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball (approximately 9.4 inches (24 cm) in diameter) through the defender's hoop (a basket 18 inches (46 cm) in diameter mounted 10 feet (3.048 m) high to a backboard at each end of the court) while preventing the opposing team from shooting through their own hoop. A field goal is worth two points, unless made from behind the three-point line, when it is worth three.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#hgy">
+            <span class="text-capitalize">Inter School science compitition</span> <i class="fa fa-sort-dest"></i>
+        </div>
+        <div id="hgy" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="download%20(2).jpg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-left text-capitalize">Won second prize in inter school science compitition </h5>
+
+                <p>A science project is an educational activity for students involving experiments or construction of models in one of the science disciplines. Students may present their science project at a science fair, so they may also call it a science fair project.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+
+
+        <section id="WhatsNew">
+
+            <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="envoironment">
+                <h2 class="text-capitalize">What's new</h2>
+            </div>
+
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                    <h4>New school canteen</h4>
+                    <img src="download%20(3).jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                    <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">The functions of school canteens are to: provide a service to the school community. provide a variety of nutritious and attractively presented food and drinks at a reasonable cost and reinforce classroom learning. The canteen provides a rewarding opportunity for parents to be involved in their child's school.</p>
+                </li>
+
+                <li class="list-group-item list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                    <h4> Online Attendance Management System</h4>
+                    <img src="download%20(4).jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                    <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">Online Attendance Management System is an application developed for student's daily attendance in school. It helps to maintain the accurate record and generate summarized student attendance reports for the students by applying various criteria.</p>
+                </li>
+            </ul>
+        </section>
+
+
+
+        <section id="Alumni">
+            <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2 class="text-capitalize">Our alumni</h2>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#AdityaUddhavThackeray">
+                <img src="220px-thumbnail.jpg" class="img-responsive">
+                <hr>
+                <p class="text-primary">Aditya Uddhav Thackeray</p>
+            </div>
+
+            <div class="modal fade" id="AdityaUddhavThackeray">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Aditya Uddhav Thackeray</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <img src="220px-thumbnail.jpg" class="img-responsive img-modal">
+                            <p class="p_modal">Aditya Uddhav Thackeray (born 13 June 1990)<br>
+                                <a href="https://en.wikipedia.org/wiki/Aaditya_Thackeray"><b>To know more</b></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#VidyaBalan">
+                <img src="200px-Vidya_Balan_promoting_Mission_Mangal.jpg" class="img-responsive" style="height: 220px;">
+                <hr>
+                <p class="text-primary">Vidya Balan</p>
+            </div>
+
+            <div class="modal fade" id="VidyaBalan">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Vidya Balan</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <img src="200px-Vidya_Balan_promoting_Mission_Mangal.jpg" class="img-responsive img-modal">
+                            <p class="p_modal">Vidya Balan (born 1 January 1979)<br>
+                                <a href="https://en.wikipedia.org/wiki/Vidya_Balan"><b>To know more</b></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#MukeshDhirubhaiAmbani">
+                <img src="200px-Mukesh_Ambani.jpg" class="img-responsive">
+                <hr>
+                <p class="text-primary">Mukesh Dhirubhai Ambani</p>
+            </div>
+
+            <div class="modal fade" id="MukeshDhirubhaiAmbani">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Mukesh Dhirubhai Ambani</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <img src="200px-Mukesh_Ambani.jpg" class="img-responsive img-modal">
+                            <p class="p_modal">Mukesh Dhirubhai Ambani (born 19 April 1957) <br>
+                                <a href="https://en.wikipedia.org/wiki/Mukesh_Ambani"><b>To know more</b></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 book" data-toggle="modal" data-target="#RajdeepSardesai">
+                <img src="220px-RajdeepSardesai.jpg" class="img-responsive">
+                <hr>
+                <p class="text-primary">Rajdeep Sardesai</p>
+            </div>
+
+            <div class="modal fade" id="RajdeepSardesai">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Rajdeep Sardesai</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <img src="220px-RajdeepSardesai.jpg" class="img-responsive img-modal">
+                            <p class="p_modal">Rajdeep Sardesai (born 24 May 1965))<br>
+                                <a href="https://en.wikipedia.org/wiki/Rajdeep_Sardesai"><b>To know more</b></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+     <section id="Contactus">
+            <h1>Contact us</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0" allowfullscreen=""></iframe>
+        </section>
+
+
+    </div>
+
+</body>
+
+</html>
